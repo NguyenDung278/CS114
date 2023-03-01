@@ -19,12 +19,12 @@ Do đó nhóm chúng em đã mong muốn sử dụng máy học để phân bi�
 Hiện nay chưa có nhiều bài báo hay nhiều nguồn trích dẫn để phân biệt cây cứt lợn so với các loại cây khác như cây cỏ dại, cây ngũ sắc.  
 3. Bài toán object detection
 + Tổng quát bài toán Object Detection:
-●	Input là  một ảnh màu có một hoặc nhiều đối tượng.
-●	Output là một hoặc nhiều bounding box trong bức ảnh thể hiện nhãn và vị trí của đối tượng.
+Input là  một ảnh màu có một hoặc nhiều đối tượng.
+Output là một hoặc nhiều bounding box trong bức ảnh thể hiện nhãn và vị trí của đối tượng.
 
 + Trong đề tài:
-●	Input là một ảnh màu gồm có một hay nhiều đối tượng cây cứt lợn.
-●	Output là một hoặc nhiều bounding box trong bức ảnh thể hiện nhãn và vị trí của đối tượng như cây cứt lợn.
+Input là một ảnh màu gồm có một hay nhiều đối tượng cây cứt lợn.
+Output là một hoặc nhiều bounding box trong bức ảnh thể hiện nhãn và vị trí của đối tượng như cây cứt lợn.
 4. Phương pháp giải quyết bài toán
 Để giải quyết bài toán Object Detection, chúng ta cần phải chọn một model để thực hiện nó. Chúng em đã sử dụng mô hình Yolov5 để giải quyết vấn đề này. 
 5. Về dữ liệu
@@ -46,11 +46,11 @@ Val: 90 ảnh .
 + Công cụ sử dụng: MakeSense.AI – một website hỗ trợ gán nhãn.
 + Nội dung của file ở định dạng txt, thể hiện các thông số:
 <id-class> <center-x> <center-y> <width> <height>
-●	id-class: Số nguyên từ 0 đến số lượng class - 1. Mỗi số nguyên tương ứng với 1 lớp.
-●	center-x: x center của bounding box.
-●	center-y: y center của bounding box.
-●	width: Chiều rộng của bounding box.
-●	height: Chiều cao của bounding box.
+-id-class: Số nguyên từ 0 đến số lượng class - 1. Mỗi số nguyên tương ứng với 1 lớp.
+-center-x: x center của bounding box.
+-	center-y: y center của bounding box.
+-	width: Chiều rộng của bounding box.
+-	height: Chiều cao của bounding box.
 Các giá trị center-x, center-y, width, height đều được chuẩn hoá về khoảng giá trị [0, 1]. Mục đích của việc tạo ra các giá trị trên để giúp tỉ lệ hóa kích thước vật thể so với bức hình trước khi đưa vào model học.
 2.Yolov5
   Sử dụng mô hình YOLOv5: YOLOv5 là một mô hình Object Detection thuộc họ mô hình YOLO
