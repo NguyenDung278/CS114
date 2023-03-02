@@ -1,0 +1,11 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+
+
+
+train: /content/drive/MyDrive/CS114/dataset/images/train/
+val: /content/drive/MyDrive/CS114/dataset/images/val/
+test:  
+
+# Classes
+nc: 1  # number of classes
+names: ['cay_cut_lon']  # class names
