@@ -1,0 +1,7 @@
+train: /content/drive/MyDrive/CS114/dataset/images/train/
+val: /content/drive/MyDrive/CS114/dataset/images/val/
+test:  /content/drive/MyDrive/CS114/data_test/
+
+# Classes
+nc: 1  # number of classes
+names: ['cay_cut_lon']  # class names
